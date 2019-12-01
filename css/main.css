@@ -1,0 +1,15 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+aside,
+body,
+section,
+main {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  flex-direction: column;
+}
