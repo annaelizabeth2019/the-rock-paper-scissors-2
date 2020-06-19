@@ -15,7 +15,7 @@ section,
 main {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 body,
@@ -24,26 +24,30 @@ main {
   flex-direction: column;
 }
 
-img,
-table {
-  width: 100%;
+img {
+  width: 47vw;
+  height: 47vw;
+  border: white 2vw solid;
   border-radius: 5px;
 }
 
-table,
 body,
 header,
 aside {
-  padding: 1em 0;
+  padding: 0.5em 0 0 0;
 }
 
 td {
   width: 33%;
+  font-size: 2.3em;
+}
+table {
+  width: 100%;
 }
 
 button {
-  width: 3em;
-  margin: 0.5em;
+  width: 30vw;
+  margin: 0.1em;
   background-color: #0d78eb;
   color: white;
   border: 5px solid #0d78eb;
@@ -56,4 +60,12 @@ button:hover {
   background-color: white;
   color: #0d78eb;
   border: 5px solid #0d78eb;
+}
+
+@media only screen and (min-width: 600px) {
+  img {
+    padding: 1em;
+    width: 50vh;
+    height: 50vh;
+  }
 }
